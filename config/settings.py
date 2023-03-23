@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt'
 ]
 
+AUTH_USER_MODEL = 'livraria.Usuario'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

@@ -8,12 +8,13 @@ from rest_framework_simplejwt.views import (
     TokenRefreshView,
 )
 
-from livraria.views import CategoriaViewSet, EditoraViewSet, LivroViewSet
+from livraria.views import CategoriaViewSet, EditoraViewSet, LivroViewSet, AutorViewSet
 
 router = DefaultRouter()
 router.register(r"categorias", CategoriaViewSet)
 router.register(r"editoras", EditoraViewSet)
 router.register(r"livros", LivroViewSet)
+router.register(r"autor", AutorViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
